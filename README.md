@@ -8,14 +8,14 @@ Convert any eBook into Audiobook: 12 lines of Python
 
 # Complete Code
 
- import pyttsx3 
- import PyPDF2 
- book = open('abcd', 'rb') 
- pdfReader = PyPDF2.PdfFileReader(book) 
- pages = pdfReader.numPages 
- print(pages) 
- speaker = pyttsx3.init() 
- page = pdfReader.getPage(6) 
- text = page.extractText() 
- speaker.say(text) 
- speaker.runAndWait() 
+ 1. import pyttsx3 
+ 2. import PyPDF2 
+ 3. book = open('abcd', 'rb') 
+ 4. pdfReader = PyPDF2.PdfFileReader(book) 
+ 5. pages = pdfReader.numPages 
+ 6. print(pages) 
+ 7. speaker = pyttsx3.init() 
+ 8. page = pdfReader.getPage(6) 
+ 9. text = page.extractText() 
+ 10. speaker.say(text) 
+ 11. speaker.runAndWait() 
